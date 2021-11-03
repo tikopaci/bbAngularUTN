@@ -1,0 +1,16 @@
+.card {
+    max-height: 500px;
+    border-radius: 20px;
+    width: 350px;
+    background-color: rgb(26, 26, 29);
+    text-align: center;
+    color: white;
+}
+
+.card-img-top {
+    width: 70%;
+    height: 15vw;
+    object-fit: contain;
+    text-align: center;
+    border: 1px solid rgba(153, 153, 153, 0.507)
+}

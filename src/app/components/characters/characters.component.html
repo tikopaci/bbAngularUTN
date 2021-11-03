@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="col-12">
+        <div class="row d-flex text-align-center justify-content-center">
+            <div class="col-4">
+                <input type="text" class="form-control mt-4 border-5 border-danger" placeholder="Search for a character" [(ngModel)]="search" (ngModelChange)="searching()">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mt-4 d-flex justify-content-center text-align-center" *ngFor="let character of filteredCharacters">
+                <div class="card d-flex text-align-center justify-content-center align-items-center">
+                    <img src="{{character.img}}" alt="..." class="card-img-top my-1 mt-2">
+                    <div class="card-body">
+                        <h3 class="card-title">{{character.name}}</h3>
+                        <p class="card-text">Nickname: {{character.nickname}}</p>
+                        <p class="card-text">Status: {{character.status}}</p>
+                        <p class="card-text">Birthday: {{character.birthday}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
